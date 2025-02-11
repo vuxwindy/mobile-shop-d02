@@ -17,15 +17,15 @@ $sqlMembers = "SELECT COUNT(*) AS total_members FROM user";
 $resultMembers = mysqli_query($conn, $sqlMembers);
 $totalMembers = mysqli_fetch_assoc($resultMembers)['total_members'];
 //truy vấn số liệu ads  
-<<<<<<< HEAD
+
 // $sqlAds = "SELECT SUM(views) AS total_ads FROM ads";
 // $resultAds = mysqli_query($conn, $sqlAds);
 // $totalAds = mysqli_fetch_assoc($resultAds)['total_ads'];
-=======
+
 $sqlAds = "SELECT COUNT(*) AS total_ads FROM ads";
 $resultAds = mysqli_query($conn, $sqlAds);
 $totalAds = mysqli_fetch_assoc($resultAds)['total_ads'];
->>>>>>> a7fd777 (Mô tả ngắn về thay đổi)
+
 ?>
 
 
