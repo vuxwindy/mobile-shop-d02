@@ -2,7 +2,11 @@
 $serverName = 'localhost';
 $userName = 'root';
 $password = '';
+<<<<<<< HEAD
 $database = 'bkd04k12';
+=======
+$database = 'bkd02';
+>>>>>>> a7fd777 (đã thay đổi tên datagit)
 
 $conn = mysqli_connect($serverName, $userName, $password, $database);
 
