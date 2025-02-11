@@ -59,12 +59,20 @@ $result = mysqli_query($conn, $sql_orders);
 										<td style=""><?php echo $row['cus_mail']; ?></td>
 										<td style=""><?php echo $row['cus_phone']; ?></td>
 										<td style=""><?php echo $row['cus_address']; ?></td>
+<<<<<<< HEAD
 										<td style=""><?php echo $row['total_price']; ?></td>
+=======
+										<td style=""><<?php echo number_format($row['total_price'],0,",","."); ?>đ</td>
+>>>>>>> a7fd777 (Mô tả ngắn về thay đổi)
 										<td class="form-group">
 											<a href="index.php?page=order_detail&order_id=<?php echo $row['order_id']; ?>" class="btn btn-primary"><i class="glyphicon glyphicon-eye-open"></i></a>
 											<a href="index.php?page=edit_order&order_id= <?php echo $row['order_id'];?> " class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i></a>
 											<a onclick="return confirmDel();" href="modules/orders/del_order.php?order_id=<?php echo $row['order_id']; ?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+<<<<<<< HEAD
 											<a href="modules/orders/approve_order.php?order_id=<?php echo $row['order_id']; ?>" class="btn btn-success" > <i class="glyphicon glyphicon-ok"></i> Duyệt</a>
+=======
+											<a href="index.php?page=approve_order&order_id=<?php echo $row['order_id']; ?>" class="btn btn-success" > <i class="glyphicon glyphicon-ok"></i> Duyệt</a>
+>>>>>>> a7fd777 (Mô tả ngắn về thay đổi)
 										</td>
 									</tr>
 									<?php

@@ -67,7 +67,11 @@
                                 <tr>
                                     <td style=""><?php echo $row['prd_id']; ?></td>
                                     <td style=""><?php echo $row['prd_name']; ?></td>
+<<<<<<< HEAD
                                     <td style=""><?php echo $row['prd_price']; ?> vnd</td>
+=======
+                                    <td style=""><?php echo number_format($row['prd_price'],0,",","."); ?>đ</td>
+>>>>>>> a7fd777 (Mô tả ngắn về thay đổi)
                                     <td id = "img_col">
                                         <img width="70" height="100" src="images/<?php echo $row['prd_image']; ?>" />
                                     </td>

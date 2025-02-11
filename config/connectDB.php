@@ -2,8 +2,7 @@
 $serverName = 'localhost';
 $userName = 'root';
 $password = '';
-$database = 'bkd04k12';
-
+$database = 'bkd02';
 $conn = mysqli_connect($serverName, $userName, $password, $database);
 
 if(!$conn) {

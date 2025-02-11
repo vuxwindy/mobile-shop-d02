@@ -175,7 +175,11 @@ $row = mysqli_fetch_assoc($result)
 				require_once "modules/ads/ads.php";
 				break;
 			//comments
+<<<<<<< HEAD
 			case 'comments':
+=======
+			case 'comment':
+>>>>>>> a7fd777 (Mô tả ngắn về thay đổi)
 				require_once "modules/comments/comment.php";
 				break;
 		}

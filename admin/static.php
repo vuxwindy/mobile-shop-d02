@@ -17,9 +17,15 @@ $sqlMembers = "SELECT COUNT(*) AS total_members FROM user";
 $resultMembers = mysqli_query($conn, $sqlMembers);
 $totalMembers = mysqli_fetch_assoc($resultMembers)['total_members'];
 //truy vấn số liệu ads  
+
 // $sqlAds = "SELECT SUM(views) AS total_ads FROM ads";
 // $resultAds = mysqli_query($conn, $sqlAds);
 // $totalAds = mysqli_fetch_assoc($resultAds)['total_ads'];
+
+$sqlAds = "SELECT COUNT(*) AS total_ads FROM ads";
+$resultAds = mysqli_query($conn, $sqlAds);
+$totalAds = mysqli_fetch_assoc($resultAds)['total_ads'];
+
 ?>
 
 
@@ -86,7 +92,11 @@ $totalMembers = mysqli_fetch_assoc($resultMembers)['total_members'];
 							<svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
+<<<<<<< HEAD
 							<div class="large">99999k</div>
+=======
+							<div class="large"><?php echo $totalAds; ?></div>
+>>>>>>> a7fd777 (Mô tả ngắn về thay đổi)
 							<div class="text-muted">Quảng Cáo</div>
 						</div>
 					</div>
